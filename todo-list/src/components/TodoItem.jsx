@@ -31,10 +31,12 @@ export class TodoItem extends Component {
   }
 }
 
-//PropTypes
-TodoItem.propTypes ={
-    todo:PropTypes.array.isRequired
-  }
+// PropTypes
+TodoItem.propTypes = {
+    todo: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired,
+  };
 
   const  btnStyle ={
       background :'#FE7E6D',
